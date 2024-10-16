@@ -14,7 +14,7 @@ public class Principal {
     private Scanner teclado = new Scanner(System.in);
     private ConsumoAPI consumoAPI = new ConsumoAPI();
     private final String URL_BASE = "http://www.omdbapi.com/?t=";
-    private final String API_KEY = "&apikey=60afd634";
+    private final String API_KEY = System.getenv("API_KEY_OMDB");
     private ConvierteDatos conversor = new ConvierteDatos();
     private List<DatosSerie> datosSeries = new ArrayList<>();
     private SerieRepository repositorio;
